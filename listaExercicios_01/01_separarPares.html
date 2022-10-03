@@ -6,9 +6,17 @@
     //Faça um programa que identifique os números pares e apresente-os ao fim do programa, ordenados de forma crescente.
 
     //ENTRADA
-
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
 
     //PROCESSAMENTO
+
+    for(let lista of listaDeNumeros){
+        if (lista % 2 === 0) {
+            document.write("<li>O numero " + lista + "é par.</li></br>");      
+        } else {
+            document.write("<li>O numero " + lista + "é impar.</li></br>");
+        }
+    }
 
 
     //SAÍDA
