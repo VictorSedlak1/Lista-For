@@ -6,10 +6,22 @@
     //Identifique APENAS os números INTEIROS e POSITIVOS. Adicione-os em uma lista e apresente ao fim do programa, indicando também quantos números foram localizados.
 
     //ENTRADA
+    let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+
+    let numerosInteiros = [];
+    let outrosNumeros = [];
+
 
 
     //PROCESSAMENTO
-
+    for(let numeros of listaDeNumeros){
+        if (numeros >=0 &&  numeros % 1 === 0) {
+        numerosInteiros.push(numeros);        
+        } else {
+        outrosNumeros.push(numeros);    
+        }
+    }
+        document.write("<li>Numeros inteiros =" + numerosInteiros.join(", ") + "</li></br><li>outros Numeros =" + outrosNumeros.join(", ") + "</li>") 
 
     //SAÍDA
 
